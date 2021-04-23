@@ -9,8 +9,7 @@ interface YoutubeApi {
     fun fetchAllPlayList(
         @Query("part") part: String,
         @Query("channelId") channelId: String,
+        @Query("maxResults") maxResults: Int,
         @Query("key") apiKey: String,
     ): Call<PlayList>
-
-    //https://www.googleapis.com/youtube/v3/channelId?id=7lCDEYXw3mM&key=AIzaSyDvL084UCGeQv3LnYBB1V6ts8_lL4RpHZs&part=snippet,contentDetails
 }

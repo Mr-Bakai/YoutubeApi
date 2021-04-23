@@ -12,7 +12,6 @@ class DetailFragment : BaseFragment<FragmentDetailBinding, DetailViewModel>(
     override fun setupLiveData() {}
 
     override fun setupUI() {
-
         val text: String? = arguments?.getString(KEY_ID)
         Toast.makeText(context, text.toString(), Toast.LENGTH_SHORT).show()
     }

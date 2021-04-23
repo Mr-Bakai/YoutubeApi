@@ -1,7 +1,5 @@
 @file:Suppress("DEPRECATION")
-
 package com.example.ui.connection
-
 import android.annotation.TargetApi
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -63,9 +61,7 @@ class NetworkConnection(private val context: Context) : LiveData<Boolean>() {
         )
     }
 
-
     private fun connectivityManagerCallback(): ConnectivityManager.NetworkCallback {
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             networkCallback = object : ConnectivityManager.NetworkCallback() {
                 override fun onLost(network: Network) {

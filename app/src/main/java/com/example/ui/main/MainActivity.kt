@@ -4,7 +4,5 @@ import com.example.youtubeapi.databinding.ActivityMainBinding
 
 class MainActivity: BaseActivity<ActivityMainBinding, MainViewModel>(ActivityMainBinding::inflate, MainViewModel::class.java) {
 
-    override fun setUpView() {
-
-    }
+    override fun setUpView() {}
 }
