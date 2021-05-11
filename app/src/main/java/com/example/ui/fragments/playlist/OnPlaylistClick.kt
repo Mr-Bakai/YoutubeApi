@@ -1,3 +1,5 @@
 package com.example.ui.fragments.playlist
 
-interface OnPlaylistClick { fun onPlaylist(id: String) }
+import com.example.model.playlist.Items
+
+interface OnPlaylistClick { fun onPlaylist(item: Items) }

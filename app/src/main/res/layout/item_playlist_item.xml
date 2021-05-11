@@ -17,9 +17,6 @@
         <ImageView
             android:id="@+id/imageView"
             style="@style/image_view_style" />
-
-        <View style="@style/view_container_style" />
-        <TextView style="@style/playlist_text_style" />
     </com.google.android.material.card.MaterialCardView>
 
     <TextView

@@ -1,5 +1,6 @@
-package com.example.model
+package com.example.model.playlist
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class PlayList(
     @SerializedName("kind") var kind: String,
@@ -49,7 +50,7 @@ data class Items(
     @SerializedName("id") var id: String,
     @SerializedName("snippet") var snippet: Snippet,
     @SerializedName("contentDetails") var contentDetails: ContentDetails
-)
+) : Serializable
 
 data class High(
     @SerializedName("url") var url: String,
@@ -72,5 +73,6 @@ data class ContentDetails(
     @SerializedName("caption") var caption: String,
     @SerializedName("licensedContent") var licensedContent: Boolean,
     @SerializedName("contentRating") var contentRating: ContentRating,
-    @SerializedName("projection") var projection: String
+    @SerializedName("projection") var projection: String,
+    var itemCount: Int
 )

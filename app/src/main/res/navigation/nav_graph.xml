@@ -9,7 +9,7 @@
         android:id="@+id/playListFragment"
         android:name="com.example.ui.fragments.playlist.PlayListFragment"
         android:label="fragment_play_list"
-        tools:layout="@layout/fragment_play_list" />
+        tools:layout="@layout/fragment_play_list"/>
 
     <fragment
         android:id="@+id/detailFragment"

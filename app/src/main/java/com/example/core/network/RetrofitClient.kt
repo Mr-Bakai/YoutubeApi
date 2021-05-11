@@ -1,5 +1,6 @@
-package com.example.network
+package com.example.core.network
 import com.example.`object`.Constant
+import com.example.remote.YoutubeApi
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
